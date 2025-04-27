@@ -57,4 +57,6 @@ Project Air Quality Monitoring and Controlling System Using STM32 and Keil bertu
    ```bash
    git clone https://github.com/naufal-fa/STM32-Air-Quality-with-Keil.git
    cd nama-folder-project
+2. **Install STM32CubeMx**
+STM32CubeMX adalah alat yang digunakan untuk merancang arsitektur sistem embedded berbasis STM32. Aplikasi ini memungkinkan Anda untuk mengonfigurasi mikrokontroler STM32 dengan mudah, termasuk pengaturan pin, clock, dan peripheral lainnya. Setelah pengaturan selesai, STM32CubeMX akan menghasilkan file `.ioc` yang digunakan untuk mengonfigurasi project, serta menghasilkan template kode yang kompatibel dengan Keil MDK-ARM. Kunjungi halaman resmi STM32CubeMX di [sini](https://www.st.com/en/development-tools/stm32cubemx.html).
 ![](src/img/[1].png)
