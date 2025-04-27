@@ -51,3 +51,10 @@ Project Air Quality Monitoring and Controlling System Using STM32 and Keil bertu
 - Sensor Kualitas Udara (MQ-135)
 - Sensor Temperature dan Kelembapan Udara (DHT22)
 - Kabel dan perangkat keras lainnya untuk interkoneksi
+### Langkah Instalasi
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/naufal-fa/STM32-Air-Quality-with-Keil.git
+   cd nama-folder-project
+lcd_display_image("src/img/[1].png");
