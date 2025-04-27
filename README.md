@@ -20,7 +20,7 @@ Project Air Quality Monitoring and Controlling System Using STM32 and Keil bertu
   
 - **Keil IDE:** Keil IDE digunakan untuk pengembangan perangkat lunak yang menghubungkan mikrokontroler STM32 dengan sensor dan perangkat lainnya. Keil menyediakan lingkungan yang efisien untuk menulis, mengompilasi, dan memprogram kode mikrokontroler.
 
-- **Sensor Kualitas Udara:** Sensor seperti MQ-7 (CO), MH-Z19 (CO2), dan SDS011 (PM2.5) digunakan untuk mendeteksi polusi udara. Sensor-sensor ini memberikan data yang relevan untuk mengevaluasi kualitas udara di lingkungan sekitar.
+- **Sensor Kualitas Udara:** Sensor seperti MQ-135 digunakan untuk mendeteksi polusi udara. Sensor-sensor ini memberikan data yang relevan untuk mengevaluasi kualitas udara di lingkungan sekitar.
 
 ### Masalah yang Diselesaikan:
 
@@ -45,15 +45,9 @@ Project Air Quality Monitoring and Controlling System Using STM32 and Keil bertu
 ## Cara Instalasi dan Menjalankan Project
 
 ### Prasyarat
-Sebutkan semua perangkat lunak atau pustaka yang perlu diinstal terlebih dahulu. Misalnya:
-
-- Python 3.x
-- Node.js
-- etc.
-
-### Langkah Instalasi
-
-1. **Clone Repository**
-   ```bash
-   git clone https://link-ke-repository-anda.git
-   cd nama-folder-project
+- Mikrokontroler STM32 Nucleo-F446RE
+- Keil IDE
+- STM32CubeMx
+- Sensor Kualitas Udara (MQ-135)
+- Sensor Temperature dan Kelembapan Udara (DHT22)
+- Kabel dan perangkat keras lainnya untuk interkoneksi
