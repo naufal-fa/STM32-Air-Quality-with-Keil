@@ -57,4 +57,4 @@ Project Air Quality Monitoring and Controlling System Using STM32 and Keil bertu
    ```bash
    git clone https://github.com/naufal-fa/STM32-Air-Quality-with-Keil.git
    cd nama-folder-project
-lcd_display_image("src/img/[1].png");
+![](src/img/[1].png)
