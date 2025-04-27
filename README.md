@@ -57,7 +57,34 @@ Project Air Quality Monitoring and Controlling System Using STM32 and Keil bertu
    ```bash
    git clone https://github.com/naufal-fa/STM32-Air-Quality-with-Keil.git
    cd nama-folder-project
-2. **Install STM32CubeMx**
-   
-STM32CubeMX adalah alat yang digunakan untuk merancang arsitektur sistem embedded berbasis STM32. Aplikasi ini memungkinkan Anda untuk mengonfigurasi mikrokontroler STM32 dengan mudah, termasuk pengaturan pin, clock, dan peripheral lainnya. Setelah pengaturan selesai, STM32CubeMX akan menghasilkan file `.ioc` yang digunakan untuk mengonfigurasi project, serta menghasilkan template kode yang kompatibel dengan Keil MDK-ARM. Kunjungi halaman resmi STM32CubeMX di [sini](https://www.st.com/en/development-tools/stm32cubemx.html).
+2. **Install STM32CubeMx:** STM32CubeMX adalah alat yang digunakan untuk merancang arsitektur sistem embedded berbasis STM32. Aplikasi ini memungkinkan Anda untuk mengonfigurasi mikrokontroler STM32 dengan mudah, termasuk pengaturan pin, clock, dan peripheral lainnya. Setelah pengaturan selesai, STM32CubeMX akan menghasilkan file `.ioc` yang digunakan untuk mengonfigurasi project, serta menghasilkan template kode yang kompatibel dengan Keil MDK-ARM. Kunjungi halaman resmi STM32CubeMX di [sini](https://www.st.com/en/development-tools/stm32cubemx.html).
 ![](src/img/[1].png)
+3. **Install MDK-Arm Keil:** adalah sebuah Integrated Development Environment (IDE) yang digunakan untuk mengembangkan aplikasi embedded system berbasis mikrokontroler STM32. Keil sering digunakan di industri untuk membangun sistem embedded yang efisien, aman, dan dapat diandalkan. Keil menyediakan berbagai fitur unggulan seperti debugging yang canggih, optimasi kode, dan integrasi dengan berbagai alat perangkat keras untuk memastikan pengembangan yang lancar dan hasil yang optimal. Kunjungi halaman resmi STM32CubeMX di [sini]([https://www.st.com/en/development-tools/stm32cubemx.html](https://www.keil.com/download/product/).
+![](src/img/[2].png)
+4. **Buka STM32CubeMx:** Buka STM32CubeMx lalu tekan **Start My project from ST Board** untuk menuju pemilihan board yang akan digunakan
+![](src/img/[3].png)
+5. **Pilih board yang akan digunakan:** Karena project ini menggunakan STM32 Nucleo-F446RE, carilah pada searchbar di kiri atas.
+![](src/img/[4].png)
+5. **Lakukan konfigurasi pin mode untuk sensor:** Untuk pin yang digunakan ada PA6 GPIO_Output (DHT22), PA7 ADC1_IN7, PB12 GPIO_Output (Relay).
+![](src/img/[5].png)
+![](src/img/[6].png)
+![](src/img/[7].png)
+6. **Pengaturan RCC:** Untuk RCC pada System Core, biarkan default atau seperti di gambar.
+![](src/img/[8].png)
+7. **Pengaturan SYS:** Untuk SYS atur seperti default atau bisa melihat seperti di gambar.
+![](src/img/[9].png)
+8. **Clock Configuration:** Untuk tab Clock Configuration, atur pengunaan clock ke HSI karena project ini tidak membutuhkan sumber clock external. Lalu untuk HCLK (MHz) atur ke max 180 sesuai dengan kemampuan microcontroller.
+![](src/img/[10].png)
+9. **Create New Project:** Pada tab Project Manager, berikan nama project dan atur penyimpanan folder sesuai dengan apa yang kalian inginkan setelah itu click generate code. **Penting: ubah Toolchain / IDE ke MDK-ARM karena kita akan menggunakan Keil**
+![](src/img/[11].png)
+
+## Kredit
+
+Kami ingin mengucapkan terima kasih kepada semua individu dan organisasi yang telah memberikan kontribusi untuk pengembangan project ini:
+
+- **[Ahmad Radhy]**: Selaku dosen matakuliah Pemrograman Kontroller.
+- **[Naufal Faqiih Ashshiddiq]**: Menyediakan pemrograman dan pengujian perangkat keras.
+- **[Rafi Muhammad Zhafir]**: Berkontribusi dalam perancangan laporan dan research.
+- **[Mushthafa Ali Akbar]**: Berkontribusi dalam perancangan laporan dan research.
+
+Terima kasih kepada semua pihak yang telah mendukung dalam menyelesaikan project ini.
